@@ -16,17 +16,20 @@ shinyUI(
     
     sidebarLayout(
       
+      # Widget 1
       sidebarPanel(
         radioButtons("bleh", label = h3("Select Species"),
         choices = typesofSpecies,
         selected = typesofSpecies[1]),
-        
+      
+      # Widget 2  
         radioButtons("color", label = h3("Select Color"),
         choices = list("Black" = 'black', "Red" = 'red', "Green" = 'green'),
         selected = 'green')
       
     ),
     
+  # Visual Graph  
     mainPanel(
       plotlyOutput("chart")
     )

@@ -1,6 +1,7 @@
 library(shiny)
 source('build_map.R')
 
+# Passing iris into a variable
 data <- iris
 
 # Code to be executed by the shiny server
